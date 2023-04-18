@@ -38,24 +38,33 @@ const App = () => {
         minHeight: "100vh",
       }}
     >
-      <svg
+      <div
         style={{
-          width: `${circleDiameter}px`,
-          height: `${circleDiameter}px`,
-          border: "1px solid black",
-          borderRadius: "50%",
-          display: "inline-block",
+          minHeight: "250px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <circle
-          cx={circleDiameter / 2}
-          cy={circleDiameter / 2}
-          r={circleDiameter / 2 - 1}
-          stroke="black"
-          strokeWidth="1"
-          fill="transparent"
-        />
-      </svg>
+        <svg
+          style={{
+            width: `${circleDiameter}px`,
+            height: `${circleDiameter}px`,
+            border: "1px solid black",
+            borderRadius: "50%",
+            display: "inline-block",
+          }}
+        >
+          <circle
+            cx={circleDiameter / 2}
+            cy={circleDiameter / 2}
+            r={circleDiameter / 2 - 1}
+            stroke="black"
+            strokeWidth="1"
+            fill="transparent"
+          />
+        </svg>
+      </div>
       <div style={{ marginTop: "20px", marginBottom: "20px" }}>
         <input
           type="range"
